@@ -40,6 +40,8 @@ RUN \
     /app/radarr/bin/Radarr.Update \
     /tmp/*
 
+RUN update-ca-certificates
+
 # copy local files
 COPY root/ /
 
